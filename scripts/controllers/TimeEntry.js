@@ -9,7 +9,7 @@
 		.controller('TimeEntry', TimeEntry);
 		
 		
-		// inject time dependency (time service)
+		// inject time service (time.js)
 		function TimeEntry(time) {
 			
 			// ViewModel, the capture variable
