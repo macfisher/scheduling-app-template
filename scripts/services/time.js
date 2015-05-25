@@ -19,6 +19,13 @@
 				
 				// $promise.then allows interception of the results
 				return Time.query().$promise.then(function(results) {
+					angular.forEach(results, function(result) {
+						
+						// add the loggedTime property which calls
+						// getTimeDiff to give a duration obj.
+						result.loggedTime = getTimeDiff(result.start_time, result.end_time);
+					});
+					
 					return results;
 				}, function(error) {
 					console.log(error);
