@@ -14,6 +14,7 @@
 			// ngResource call to the static data
 			var Time = $resource('data/time.json');
 			
+			
 			function getTime() {
 				
 				// $promise.then allows interception of the results
@@ -22,6 +23,7 @@
 				}, function(error) {
 					console.log(error);
 				});
+				
 			}
 			
 			return {

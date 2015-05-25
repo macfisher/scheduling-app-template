@@ -17,6 +17,15 @@
 			
 			vm.timeentries = [];
 			
+			// fetch time entries from static JSON file
+			// place results in vm.timeentries array
+			time.getTime().then(function(results) {
+				vm.timeentries = results;
+				console.log(vm.timeentries);
+			}, function(error) {
+				console.log(error);
+			});
+			
 		}
 	
 })();
