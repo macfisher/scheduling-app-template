@@ -26,6 +26,13 @@
 				console.log(error);
 			});
 			
+			
+			// updates values in the 'total time' box by
+			// calling getTotalTime method on the time service
+			function updateTotalTime(timeentries) {
+				vm.totalTime = time.getTotalTime(timeentries);
+			}
+			
 		}
 	
 })();
