@@ -5,7 +5,7 @@
 	'use strict';
 	
 	angular
-		.modules('timeTracker')
+		.module('timeTracker')
 		.factory('time', time);
 		
 		
